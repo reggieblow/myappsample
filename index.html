@@ -1,3 +1,39 @@
+<style>
+    @media(min-width:768px) {
+        .container-1 {
+            display: flex;
+            align-items: flex-center;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-basis: 15%;
+            flex-wrap: wrap;
+        }
+        .container-1 div {
+            border: 1px #000 solid;
+            padding: 20px;
+        }
+    }
+    
+    .box-1 {
+        flex: 1;
+        order: 2;
+        background-color: aliceblue;
+    }
+    
+    .box-2 {
+        flex: 1;
+        order: 3;
+        background-color: lightpink;
+    }
+    
+    .box-3 {
+        flex: 1;
+        order: 1;
+        background-color: lightgoldenrodyellow;
+    }
+
+</style>
+
 <html>
 
 <head>
@@ -5,15 +41,19 @@
 </head>
 
 <body>
-    <div class="containter-1">
+    <div class="container-1">
         <div class="box-1">
             <h3>Box One</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis lobortis neque a tincidunt.
+            </p>
         </div>
         <div class="box-2">
             <h3>Box Two</h3>
+            <p> Donec molestie odio sed orci lacinia, in elementum nisl condimentum. Phasellus pharetra condimentum justo in pharetra. Phasellus justo ipsum, placerat a leo at, lobortis ullamcorper ipsum. Fusce maximus elit et massa varius, vel malesuada purus convallis.</p>
         </div>
         <div class="box-3">
             <h3>Box Three</h3>
+            <p> In id metus malesuada, convallis risus vitae, condimentum velit. Integer tincidunt justo vel tortor dapibus euismod. Nunc efficitur velit non felis pulvinar ultrices. Pellentesque lacinia sit amet nibh id congue. Nullam est eros, pellentesque vitae luctus eget, viverra ac dolor. Aenean aliquam facilisis eros, ac accumsan sapien congue eget. Nunc nec pharetra sapien, nec tristique lectus.</p>
         </div>
     </div>
 </body>
